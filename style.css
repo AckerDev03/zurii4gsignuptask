@@ -1,0 +1,173 @@
+body {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(bg-intro-desktop.png);
+    background-color: #ff7976;
+    background-size: cover;
+    color: #eeee;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.side-intro {
+    width: 450px;
+    padding: 50px;
+    margin-top: 40px;
+    margin-right: 30px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+
+}
+
+.signup-form {
+    width: 450px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.signup-top {
+    font-weight: normal;
+    border-radius: 10px;
+    background-color: #5d54a3;
+    text-align: center;
+    padding: 1px;
+    box-shadow: 0px 7px 0px 0px #00000047;
+}
+
+form {
+    background-color: #ffff;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0px 7px 0px 0px #00000047;
+}
+
+
+input {
+    width: 350px;
+    padding: 15px 25px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px 0;
+    border: 1px solid #eeee;
+    border-radius: 5px;
+}
+
+input:required:focus:invalid {
+    outline: none;
+    border: 1px solid #ff7a7a;
+    background: url(icon-error.svg) no-repeat right;
+    background-origin: content-box;
+}
+
+input:invalid:focus+span {
+    outline: none;
+    display: inline;
+    color: #ff7a7a;
+    font-size: 13px;
+    float: right;
+    margin-right: 5px;
+}
+
+span {
+    display: none;
+    margin: 0;
+    font-style: italic;
+}
+
+button {
+    margin-top: 10px;
+    width: 400px;
+    padding: 20px;
+    background-color: #38cb8b;
+    border: 1px solid #38cb8b;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    color: #eafffd;
+    box-shadow: inset 0px -2px 0px 0px #00000047;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #38cb8b94;
+    border: 1px solid #38cb8b94;
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 0.5rem 1rem #00000033;
+}
+
+.signup-bottom {
+    margin-top: 15px;
+    color: #c8c7cf;
+    font-size: 11px;
+}
+
+.signup-bottom strong {
+    text-decoration: none;
+    font-size: 12px;
+    color: #dea0a1;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url(bg-intro-mobile.png);
+    }
+
+
+    main {
+        flex-direction: column;
+        margin: 20px 0;
+        text-align: center;
+        align-items: center;
+    }
+
+
+    .side-intro {
+        width: 300px;
+        padding: 20px;
+        margin: 20px 0;
+        margin-right: 0;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+
+    .signup-form {
+        width: 300px;
+        align-content: center;
+    }
+
+    form {
+        margin: 30px 0;
+    }
+
+    input {
+        width: 200px;
+    }
+
+    button {
+        width: 250px;
+
+    }
+}
